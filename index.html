@@ -1,320 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rakesh Kumar - Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Kumar - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-      /* Basic reset */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      body {
-        font-family: "Roboto", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-      }
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            padding: 20px;
+        }
 
-      .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-      }
-
-      header {
-        background: #343a40;
-        color: #fff;
-        padding: 30px 0;
-        text-align: center;
-        border-bottom: 3px solid #007bff;
-      }
-
-      header h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-      }
-
-      header p {
-        margin: 5px 0;
-      }
-
-      header a {
-        color: #007bff;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-
-      header a:hover {
-        text-decoration: underline;
-      }
-
-      section {
-        padding: 20px;
-        margin: 20px 0;
-        background: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      h2 {
-        color: #007bff;
-        border-bottom: 2px solid #007bff;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        font-size: 1.8em;
-      }
-
-      h3 {
-        color: #343a40;
-        margin-top: 20px;
-        font-size: 1.5em;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      ul li {
-        padding: 5px 0;
-        position: relative;
-        padding-left: 20px;
-      }
-
-      ul li::before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: #007bff;
-        font-weight: bold;
-      }
-
-      footer {
-        background: #343a40;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-
-      footer p {
-        margin: 0;
-      }
-
-      /* Hover effects */
-      ul li:hover {
-        color: #007bff;
-        cursor: pointer;
-      }
-
-      /* Responsive design */
-      @media (max-width: 768px) {
         .container {
-          width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
-        header h1 {
-          font-size: 2em;
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
         }
-      }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            position: absolute;
+            left: 50%;
+            top: 110%;
+            transform: translate(-50%, -50%);
+            background-color: #007bff;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0px 0px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        .header a {
+            color: #f9f9f9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            padding: 80px 20px 20px 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        ul li:before {
+            content: "\2022";
+            position: absolute;
+            left: 0;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+
+        .skills ul, .certifications ul {
+            column-count: 2;
+            column-gap: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-top: 3px solid #0056b3;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .skills ul, .certifications ul {
+                column-count: 1;
+            }
+            .header img {
+                width: 120px;
+                height: 120px;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <h1>Rakesh Kumar</h1>
-        <p>Bangalore, Karnataka, India</p>
-        <p>
-          Email: <a href="mailto:rkbatu87@gmail.com">rkbatu87@gmail.com </a>|
-          &nbsp; Phone: +91 8792137500
-        </p>
-        <p>
-          <a href="https://linkedin.com/in/rakesh-kumar-1a6209212/">LinkedIn</a>
-          | <a href="https://github.com/rkbatu">GitHub</a>
-        </p>
-      </div>
-    </header>
-    <section class="summary">
-      <div class="container">
-        <h2>Summary</h2>
-        <p>
-          Tech-Savvy Master of Computer Application student with hands-on
-          experience in mainframe batch application development and automation
-          using Automation Anywhere. Possess a strong foundation in programming and
-          problem-solving, and driven to learn new technologies. Seeking a
-          challenging role where I can contribute my skills and grow
-          professionally. 
-        </p>
-      </div>
-    </section>
-    <section class="experience">
-      <div class="container">
-        <h2>Experience</h2>
-        <h3>Associate Consultant</h3>
-        <p>
-          Information Service Group - Bangalore, India | August 2023 – February
-          2024
-        </p>
-        <ul>
-          <li>
-            Monitored automated processes using Control Room/Orchestrator and
-            administered control room operations.
-          </li>
-          <li>
-            Conducted bug fixes on previously developed automation solutions.
-          </li>
-          <li>
-            Provided production support to clients, ensuring smooth operation of
-            automated systems.
-          </li>
-          <li>
-            Generated weekly reports on automation runs to track performance and
-            progress.
-          </li>
-          <li>
-            Facilitated and managed meetings associated with overseeing these
-            operations. Achieved 99.9% success rate with automation processes
-            affecting over 50 processes.
-          </li>
-        </ul>
-        <h3>Programmer Trainee (Mainframe Developer)</h3>
-        <p>Cognizant - Bangalore, India | January 2023 - August 2023</p>
-        <ul>
-          <li>
-            Undergone specialized training in mainframe application development
-            focusing on COBOL, JCL, and DB2 technologies.
-          </li>
-          <li>
-            Proficient in developing batch applications on mainframe systems,
-            with hands-on experience in creating two applications during
-            training.
-          </li>
-          <li>
-            Successfully completed training with distinction, showcasing strong
-            understanding and application of mainframe development principles.
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="container">
-        <h2>Projects</h2>
-        <h3>
-          Walmart Retail Corporation (Food Goods Processing system) - Mainframe
-        </h3>
-        <p>Cognizant | May 2023 - May 2023</p>
-        <ul>
-          <li>
-            Developed a mainframe batch application utilizing JCL, COBOL, and
-            DB2.
-          </li>
-          <li>
-            Application managed storage and processing of product information
-            sourced from multiple product teams.
-          </li>
-          <li>
-            Implemented a verification and validation system within the WALMART
-            Product Processing System for customer data using COBOL.
-          </li>
-          <li>Calculated retail selling prices for validated products.</li>
-          <li>
-            Generated daily Cost and Price reports based on the processed
-            information.
-          </li>
-        </ul>
-        <h3>Shares (Data Processing System) - Mainframe</h3>
-        <p>Cognizant | April 2023 - April 2023</p>
-        <ul>
-          <li>
-            Spearheaded the development of a critical mainframe batch
-            application aimed at processing shares data during a training
-            project.
-          </li>
-          <li>
-            Applied keen attention to detail in designing and executing
-            intricate calculations essential for producing precise and
-            standardized reports.
-          </li>
-          <li>
-            Demonstrated proficiency in harnessing mainframe technologies to
-            deliver efficient client solutions for data processing and
-            reporting, highlighting adeptness in leveraging technology for
-            streamlined outcomes.
-          </li>
-        </ul>
-        <h3>Monitoring Sheet (Automation) – Automation Anywhere</h3>
-        <p>ISG | November 2023 – December 2023</p>
-        <ul>
-          <li>
-            Developed automation using Automation Anywhere to streamline data
-            extraction and reporting processes.
-          </li>
-          <li>
-            Automated the extraction of daily execution data from the control
-            room into CSV format, ensuring accurate time zone conversion for
-            analysis.
-          </li>
-          <li>
-            Facilitated team performance analysis by updating the monitoring
-            sheet with information on daily triggered automations, simplifying
-            report preparation tasks.
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="education">
-      <div class="container">
-        <h2>Education</h2>
-        <h3>Master of Computer Applications</h3>
-        <p>Dayananda Sagar College of Engineering - Bangalore, India | 2025</p>
-        <h3>Bachelor of Computer Applications</h3>
-        <p>St Claret College - Bangalore, India | 2022 | GPA: 8.62</p>
-        <h3>12th (PUC)</h3>
-        <p>St Claret Pre-University College - Bangalore, India | 2019 | 70%</p>
-        <h3>10th</h3>
-        <p>Oxford Public School - Bangalore, India | 2017 | 76%</p>
-      </div>
-    </section>
-    <section class="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <ul>
-          <li>Programming Languages - (Python, Java, C)</li>
-          <li>Web development - (HTML, CSS, Javascript, Angular JS, Django)</li>
-          <li>Databases - (MySQL,MongoDB)</li>
-          <li>Version Control - (Git, GitHub)</li>
-          <li>Mainframe (JCL, COBOL, DB2, VSAM)</li>
-          <li>Automation Anywhere</li>
-        </ul>
-      </div>
-    </section>
-    <section class="certifications">
-      <div class="container">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Mainframe: The Complete COBOL Course - Udemy </li>
-          <li>MongoDB Essentials - MongoDB University </li>
-          <li>Python Programming - Hacker Rank </li>
-          <li>Bot Developer - Automation Anywhere </li>
-        </ul>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <p>&copy; 2024 Rakesh Kumar</p>
-      </div>
-    </footer>
-  </body>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="rk.jpg" alt="Rakesh Kumar">
+            <h1>Rakesh Kumar</h1>
+            <p>Bangalore, Karnataka, India</p>
+            <p>Email: <a href="mailto:rkbatu87@gmail.com">rkbatu87@gmail.com</a> | Phone: +91 8792137500</p>
+            <p><a href="https://linkedin.com/in/rakesh-kumar-1a6209212/">LinkedIn</a> | <a href="https://github.com/rkbatu"> GitHub</a></p>
+            <p> </p>
+        </header>
+
+        <div class="main-content">
+            <section class="summary">
+                <h2>Summary</h2>
+                <p>Tech-Savvy Master of Computer Application student with hands-on experience in mainframe batch application development and automation using Automation Anywhere. Possess a strong foundation in programming and problem-solving, and driven to learn new technologies. Seeking a challenging role where I can contribute my skills and grow professionally.</p>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <h3>Associate Consultant</h3>
+                <p>Information Service Group - Bangalore, India | August 2023 – February 2024</p>
+                <ul>
+                    <li>Monitored automated processes using Control Room/Orchestrator and administered control room operations.</li>
+                    <li>Conducted bug fixes on previously developed automation solutions.</li>
+                    <li>Provided production support to clients, ensuring smooth operation of automated systems.</li>
+                    <li>Generated weekly reports on automation runs to track performance and progress.</li>
+                    <li>Facilitated and managed meetings associated with overseeing these operations. Achieved 99.9% success rate with automation processes affecting over 50 processes.</li>
+                </ul>
+                <h3>Programmer Trainee (Mainframe Developer)</h3>
+                <p>Cognizant - Bangalore, India | January 2023 - August 2023</p>
+                <ul>
+                    <li>Undergone specialized training in mainframe application development focusing on COBOL, JCL, and DB2 technologies.</li>
+                    <li>Proficient in developing batch applications on mainframe systems, with hands-on experience in creating two applications during training.</li>
+                    <li>Successfully completed training with distinction, showcasing strong understanding and application of mainframe development principles.</li>
+                </ul>
+            </section>
+
+            <section class="projects">
+                <h2>Projects</h2>
+                <h3>Walmart Retail Corporation (Food Goods Processing system) - Mainframe</h3>
+                <p>Cognizant | May 2023 - May 2023</p>
+                <ul>
+                    <li>Developed a mainframe batch application utilizing JCL, COBOL, and DB2.</li>
+                    <li>Application managed storage and processing of product information sourced from multiple product teams.</li>
+                    <li>Implemented a verification and validation system within the WALMART Product Processing System for customer data using COBOL.</li>
+                    <li>Calculated retail selling prices for validated products.</li>
+                    <li>Generated daily Cost and Price reports based on the processed information.</li>
+                </ul>
+                <h3>Shares (Data Processing System) - Mainframe</h3>
+                <p>Cognizant | April 2023 - April 2023</p>
+                <ul>
+                    <li>Spearheaded the development of a critical mainframe batch application aimed at processing shares data during a training project.</li>
+                    <li>Applied keen attention to detail in designing and executing intricate calculations essential for producing precise and standardized reports.</li>
+                    <li>Demonstrated proficiency in harnessing mainframe technologies to deliver efficient client solutions for data processing and reporting, highlighting adeptness in leveraging technology for streamlined outcomes.</li>
+                </ul>
+                <h3>Monitoring Sheet (Automation) – Automation Anywhere</h3>
+                <p>ISG | November 2023 – December 2023</p>
+                <ul>
+                    <li>Developed automation using Automation Anywhere to streamline data extraction and reporting processes.</li>
+                    <li>Automated the extraction of daily execution data from the control room into CSV format, ensuring accurate time zone conversion for analysis.</li>
+                    <li>Facilitated team performance analysis by updating the monitoring sheet with information on daily triggered automations, simplifying report preparation tasks.</li>
+                </ul>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <h3>Master of Computer Applications</h3>
+                <p>Dayananda Sagar College of Engineering - Bangalore, India | 2025</p>
+                <h3>Bachelor of Computer Applications</h3>
+                <p>St Claret College - Bangalore, India | 2022 | GPA: 8.62</p>
+                <h3>12th (PUC)</h3>
+                <p>St Claret Pre-University College - Bangalore, India | 2019 | 70%</p>
+                <h3>10th</h3>
+                <p>Oxford Public School - Bangalore, India | 2017 | 76%</p>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages - (Python, Java, C)</li>
+                    <li>Web development - (HTML, CSS, Javascript, Angular JS, Django)</li>
+                    <li>Databases - (MySQL, MongoDB)</li>
+                    <li>Version Control - (Git, GitHub)</li>
+                    <li>Mainframe (JCL, COBOL, DB2, VSAM)</li>
+                    <li>Automation Anywhere</li>
+                </ul>
+            </section>
+
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Mainframe: The Complete COBOL Course - Udemy</li>
+                    <li>MongoDB Essentials - MongoDB University</li>
+                    <li>Python Programming - HackerRank</li>
+                    <li>Bot Developer - Automation Anywhere</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <!-- <p>&copy; 2024 Rakesh Kumar</p> -->
+        </footer>
+    </div>
+</body>
 </html>
